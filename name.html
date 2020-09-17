@@ -1,20 +1,20 @@
 <html>
 <head>
 <title>
-Enter Name JavaScript
+Greetings!
 </title>
 <script>
 function getName() {
-   document.EnterName.Greeting.value=
-      document.getElementById("myList").options[document.getElementById("myList").selectedIndex].text + " " + document.EnterName.myName.value + "!"
+   document.Name.Greeting.value=
+      document.getElementById("myList").options[document.getElementById("myList").selectedIndex].text + " " + document.Name.myName.value + "!"
 }
 </script>
 </head>
 <body>
 
-<h2>Enter Name</h2>
+<h2>Enter Name and Preferred Greeting</h2>
 
-<form name="EnterName">
+<form name="Name">
 <table>
 
 <tr>
@@ -25,7 +25,7 @@ function getName() {
      Enter your name: 
   </td>
   <td>
-     <input type=text name="myName" size=40>
+     <input type=text name="myName" size=20>
    </td>
 </tr>
 
@@ -38,7 +38,7 @@ function getName() {
     </td>
     <td>
         <select id = "myList">
-            <option answer = "1">Greeting</option>
+            <option answer = "1">Greetings</option>
             <option answer = "2">Hello</option>
             <option answer = "3">Hi</option>
             <option answer = "4">What's up</option>
@@ -51,10 +51,10 @@ function getName() {
       <b>2.</b>
    </td>
    <td>
-      Click here when done:
+      Click here when you are done:
    </td>
    <td>
-      <input type=button value="Here" onClick=getName()>
+      <input type=button value="Done" onClick=getName()>
    </td>
 </tr>
     
@@ -66,7 +66,7 @@ function getName() {
       Your personalized greeting:
    </td>
    <td>
-      <input type=list name="Greeting" size=40>
+      <input type=list name="Greeting" size=20>
    </td>
 </tr>
 </table>
@@ -75,4 +75,3 @@ function getName() {
 </form>
 </body>
 </html>
-
